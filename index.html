@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./Desencriptador.js" async refer></script>
+    <script src="./Encriptador.js" async refer></script>
+    <script src="./Copiar.js" async refer></script>
+    <script
+      src="https://kit.fontawesome.com/1003ac90d9.js"
+      crossorigin="anonymous"
+      async
+      refer
+    ></script>
+
+    <title>Challenge 1</title>
+    <link rel="stylesheet" href="Design.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="Pantalla1">
+        <div class="bocinas">
+          <div class="bocina1"></div>
+          <div class="bocina2"></div>
+          <div class="bocina3"></div>
+          <div class="bocina4"></div>
+          <div class="bocina5"></div>
+          <div class="bocina6"></div>
+        </div>
+        <div class="bocinas2">
+          <div class="bocina1"></div>
+          <div class="bocina2"></div>
+          <div class="bocina3"></div>
+          <div class="bocina4"></div>
+          <div class="bocina5"></div>
+          <div class="bocina6"></div>
+        </div>
+        <div class="areatexto">
+          <form action="">
+            <textarea
+              autofocus
+              placeholder="Ingrese su texto aquí"
+              class="texto1"
+              spellcheck="false"
+              id="mensajeaEncriptar"
+            ></textarea>
+
+            <button class="instrucciones">
+              <i class="fa-solid fa-question"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="imagenOne"></div>
+      <div class="imagenalura"></div>
+      <div class="imagenino"></div>
+
+      <div class="Bisagra">
+        <div class="luzencendido">
+          <div class="luz1"></div>
+          <div class="luz2"></div>
+          <div class="luz3"></div>
+        </div>
+      </div>
+      <section class="Pantalla2">
+        <div class="areatexto2" ;id="cadena">
+          <div class="Botones">
+            <button onclick="encriptar()" class="btn btn-1">Encriptar</button>
+            <button onclick="desencriptar()" class="btn2 btn-2">
+              Desencriptar
+            </button>
+          </div>
+          <div>
+            <form>
+              <textarea readonly class="texto2" id="resultado"></textarea>
+            </form>
+          </div>
+        </div>
+        <div class="cajabtncopiar">
+          <button class="btncopiar">
+            <i class="fa-regular fa-copy"></i>
+          </button>
+          <p class="leyendacopiar">COPIAR</p>
+        </div>
+        <div class="cajaStart">
+          <div class="btnStart"></div>
+          <p class="leyendaStart">START</p>
+        </div>
+        <div class="cajacruz">
+          <div class="cuadroCruz1"></div>
+          <div class="cuadroCruz2"></div>
+          <div class="cuadroCruz3"></div>
+          <div class="cuadroCruz4"></div>
+          <div class="cuadroCruz5"></div>
+        </div>
+        <div class="cajabotones">
+          <div class="botonA">
+            <i class="fa-solid fa-a"></i>
+          </div>
+          <div class="botonB">
+            <i class="fa-solid fa-b"></i>
+          </div>
+          <div class="botonY">
+            <i class="fa-solid fa-y"></i>
+          </div>
+          <div class="botonX">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+      </section>
+      <div class="lugar">
+        <canvas id="lienzo" width="240" height="500"></canvas>
+      </div>
+      <div class="lugar2">
+        <canvas id="lienzo2" width="240" height="500"></canvas>
+      </div>
+      <div class="mensajecopiado"><p>¡Copiado al Portapapeles!</p></div>
+    </main>
+  </body>
+</html>

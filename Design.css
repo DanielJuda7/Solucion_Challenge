@@ -1,0 +1,783 @@
+@import url("https://fonts.googleapis.com/css2?family=Kufam&display=swap");
+@keyframes move_vector {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes colores {
+  0% {
+    background: #636363;
+  }
+  50% {
+    background: #b7b7b7;
+  }
+
+  100% {
+    background: #ffffff;
+  }
+}
+@keyframes contornos {
+  0% {
+    color: #636363;
+  }
+  50% {
+    color: #b7b7b7;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+@keyframes colores1 {
+  0% {
+    background: #636363;
+  }
+  50% {
+    background: #b7b7b7;
+  }
+  90% {
+    background-image: url("Imagenes/onetendo2.jpg");
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+@keyframes colores2 {
+  0% {
+    background: #636363;
+  }
+  50% {
+    background: #b7b7b7;
+  }
+  90% {
+    background-image: url("Imagenes/logone.jpg");
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+@keyframes luz1 {
+  0% {
+    background: #636363;
+  }
+  50% {
+    background: #b7b7b7;
+  }
+  100% {
+    background: green;
+  }
+}
+@keyframes luz2 {
+  0% {
+    background: #636363;
+  }
+  50% {
+    background: #b7b7b7;
+  }
+  100% {
+    background: yellow;
+  }
+}
+@keyframes luz3 {
+  0% {
+    background: #636363;
+  }
+  50% {
+    background: #b7b7b7;
+  }
+  100% {
+    background: #d81212;
+  }
+}
+@keyframes signoint {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url("Imagenes/fondo.jpg");
+}
+main {
+  background-image: url("Imagenes/fondo.jpg");
+  margin: 0 0;
+  min-width: 1400px;
+  max-width: 1920px;
+  min-height: 100vh;
+}
+
+.Pantalla1 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 5px;
+  width: 600px;
+  height: 340px;
+  background: #272727;
+  position: relative;
+  border-radius: 5%;
+  left: 287px;
+  top: 8px;
+}
+.imagenOne {
+  width: 185px;
+  height: 398px;
+  position: absolute;
+  background-image: url("Imagenes/one2.jpg");
+  top: 8px;
+  left: 1223px;
+  opacity: 0.5;
+  animation: move_vector 4s linear infinite;
+}
+.imagenalura {
+  width: 69px;
+  height: 107px;
+  position: absolute;
+  background-image: url("Imagenes/alura.jpg");
+  top: 30px;
+  left: 50px;
+}
+.imagenino {
+  width: 202px;
+  height: 434px;
+  position: absolute;
+  background-image: url("Imagenes/nino.jpg");
+  top: 300px;
+  left: 1470px;
+  opacity: 0.5;
+}
+.areatexto {
+  position: absolute;
+  top: 13%;
+  right: 112px;
+  border: solid;
+  border-width: 20px;
+  width: 346px;
+}
+
+.texto1 {
+  resize: none;
+  height: 220px;
+  width: 340px;
+  background: #636363;
+  animation-name: colores1;
+  animation-duration: 3s;
+  background: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-image: none;
+}
+.instrucciones {
+  position: absolute;
+  right: 4px;
+  top: 193px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  animation-name: signoint;
+  animation-duration: 3s;
+  border: solid;
+  border-color: #901c1e;
+  background: #e61e1d;
+  cursor: pointer;
+}
+.fa-question {
+  color: #901c1e;
+}
+.instrucciones:hover {
+  width: 35px;
+  height: 35px;
+  border-width: 4px;
+}
+.texto2 {
+  resize: none;
+  border: none;
+  height: 180px;
+  width: 340px;
+  background: #636363;
+  animation-name: colores2;
+  animation-duration: 3s;
+  background: #ffffff;
+  font-family: "Kufam", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bocinas {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  top: 120px;
+  left: 10px;
+}
+.bocinas2 {
+  position: absolute;
+  width: 90px;
+  height: 60px;
+  top: 120px;
+  right: 10px;
+}
+.bocina1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #141414;
+  border-radius: 50%;
+  left: 15px;
+  top: 15px;
+  margin: 5px;
+}
+.bocina2 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #141414;
+  border-radius: 50%;
+  left: 30px;
+  top: 15px;
+  margin: 5px;
+}
+.bocina3 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #141414;
+  border-radius: 50%;
+  left: 45px;
+  top: 15px;
+  margin: 5px;
+}
+.bocina4 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #141414;
+  border-radius: 50%;
+  left: 15px;
+  top: 30px;
+  margin: 5px;
+}
+.bocina5 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #141414;
+  border-radius: 50%;
+  left: 30px;
+  top: 30px;
+  margin: 5px;
+}
+.bocina6 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #141414;
+  border-radius: 50%;
+  left: 45px;
+  top: 30px;
+  margin: 5px;
+}
+.Bisagra {
+  border-style: solid;
+  background: #272727;
+  border-color: #000000;
+  border-width: 3px;
+  position: relative;
+  width: 500px;
+  height: 40px;
+  border-radius: 30px;
+  left: 332px;
+  top: 8px;
+}
+.luzencendido {
+  position: absolute;
+  width: 40px;
+  height: 21px;
+  left: 30px;
+}
+.luz1 {
+  position: absolute;
+  left: 0px;
+  width: 4px;
+  height: 21px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  animation-name: luz1;
+  animation-duration: 3s;
+  background: #3edd36;
+}
+.luz2 {
+  position: absolute;
+  left: 10px;
+  width: 4px;
+  height: 21px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  animation-name: luz2;
+  animation-duration: 2s;
+  background: #636363;
+}
+.luz3 {
+  position: absolute;
+  left: 20px;
+  width: 4px;
+  height: 21px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  animation-name: luz3;
+  animation-duration: 1s;
+  background: #636363;
+}
+.Pantalla2 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 5px;
+  width: 600px;
+  height: 340px;
+  background: #272727;
+  position: absolute;
+  border-radius: 5%;
+  left: 287px;
+  top: 400px;
+}
+
+.areatexto2 {
+  position: absolute;
+  top: 13%;
+  border-width: 20px;
+  height: 220px;
+  width: 346px;
+  right: 112px;
+  border-style: solid;
+  background: #636363;
+  border-color: #141414;
+  animation-name: colores;
+  animation-duration: 3s;
+  background: #ffffff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.Botones {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.btn {
+  animation-name: signoint;
+  animation-duration: 3s;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: absolute;
+  letter-spacing: 5px;
+  text-indent: 10px;
+  z-index: 2;
+  top: 184px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  left: 2px;
+  cursor: pointer;
+}
+.btn2 {
+  animation-name: signoint;
+  animation-duration: 3s;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: absolute;
+  letter-spacing: 5px;
+  text-indent: 10px;
+  z-index: 2;
+  top: 184px;
+  right: 0px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  right: 2px;
+  cursor: pointer;
+}
+
+.btn-1::after {
+  animation-name: colores;
+  animation-duration: 3s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 30, 143),
+    rgb(19, 227, 255),
+    rgb(251, 255, 20),
+    rgb(255, 15, 15)
+  );
+  background-size: 300%;
+  border-radius: 20px;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+.btn-1:hover::after {
+  background-position: 100%;
+  filter: blur(15px);
+}
+
+.btn-1::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 30, 143),
+    rgb(19, 227, 255),
+    rgb(251, 255, 20),
+    rgb(255, 15, 15)
+  );
+  background-size: 300%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.btn-1:hover::before {
+  background-position: 100%;
+}
+
+.btn-2::after {
+  animation-name: colores;
+  animation-duration: 3s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgb(19, 227, 255),
+    rgb(255, 30, 143),
+    rgb(251, 255, 20),
+    rgb(255, 15, 15)
+  );
+  background-size: 300%;
+  border-radius: 20px;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+
+.btn-2:hover::after {
+  background-position: 100%;
+  filter: blur(15px);
+}
+
+.btn-2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 30, 143),
+    rgb(19, 227, 255),
+    rgb(255, 15, 15),
+    rgb(251, 255, 20)
+  );
+  background-size: 300%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.btn-2:hover::before {
+  background-position: 100%;
+}
+.btn-1:hover {
+  font-size: 14px;
+  border: solid;
+  border-color: red;
+}
+.btn-2:hover {
+  font-size: 14px;
+  border: solid;
+  border-color: red;
+}
+
+.cajabtncopiar {
+  position: absolute;
+  top: 242px;
+  right: 10px;
+  width: 95px;
+  height: 30px;
+}
+.leyendacopiar {
+  position: absolute;
+  right: 0px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+.cajaStart {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  width: 95px;
+  height: 30px;
+}
+.leyendaStart {
+  position: absolute;
+  right: 0px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  right: 10px;
+}
+.mensajecopiado {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Kufam", sans-serif;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+.btncopiar {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background: #000000;
+  position: absolute;
+  top: 10px;
+  border: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+  cursor: pointer;
+}
+.btncopiar:hover {
+  width: 33px;
+  height: 33px;
+  border: solid;
+  border-color: #ffffff;
+  border-width: 3px;
+}
+.fa-regular {
+  color: #ffffff;
+}
+.btnStart {
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  background: #000000;
+  position: absolute;
+  top: 10px;
+  border: solid;
+  border-color: #ffffff;
+  border-width: 2px;
+}
+.cajacruz {
+  position: absolute;
+  top: 20px;
+  width: 90px;
+  height: 90px;
+  top: 80px;
+  left: 6px;
+}
+.cuadroCruz1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  background: #000000;
+  border-top: solid;
+  border-right: solid;
+  border-left: solid;
+  border-bottom: none;
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.cuadroCruz2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0px;
+  top: 30px;
+  background: #000000;
+  border-top: solid;
+  border-right: solid;
+  border-left: none;
+  border-bottom: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.cuadroCruz3 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  top: 60px;
+  background: #000000;
+  border-top: none;
+  border-right: solid;
+  border-left: solid;
+  border-bottom: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.cuadroCruz4 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: 30px;
+  background: #000000;
+  border-top: solid;
+  border-right: none;
+  border-left: solid;
+  border-bottom: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+}
+.cuadroCruz5 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  top: 30px;
+  background: #000000;
+}
+.cajabotones {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 80px;
+  right: 10px;
+}
+.botonY {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  background: #f19c20;
+  border: solid;
+  border-color: #fdc91a;
+  border-width: 2px;
+  border-radius: 50%;
+}
+.botonB {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 30px;
+  background: #e61e1d;
+  border: solid;
+  border-color: #bd2325;
+  border-width: 2px;
+  border-radius: 50%;
+}
+.botonA {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 30px;
+  top: 60px;
+  background: #72a53d;
+  border: solid;
+  border-color: #a9d669;
+  border-width: 2px;
+  border-radius: 50%;
+}
+.botonX {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  top: 30px;
+  background: #0265b6;
+  border: solid;
+  border-color: #3c92d3;
+  border-width: 2px;
+  border-radius: 50%;
+}
+
+.fa-a {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  color: #a9d669;
+}
+.fa-b {
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  color: #bd2325;
+}
+.fa-y {
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  color: #fdc91a;
+}
+.fa-x {
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  color: #3c92d3;
+}
+.lugar {
+  position: absolute;
+
+  top: 150px;
+  left: 960px;
+  width: 240px;
+  height: 510px;
+  background: #f4d53c;
+  border-radius: 15px;
+}
+.lugar2 {
+  position: absolute;
+
+  top: 150px;
+  left: 0px;
+  width: 240px;
+  height: 510px;
+  background: #74c4d6;
+  border-radius: 15px;
+}
+
+.lienzo {
+  position: absolute;
+}
